@@ -1,0 +1,10 @@
+form {
+  background-color: rgb(126, 126, 126);
+  border-radius: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+body {
+  font-weight: bold;
+  background-color: rgb(227, 242, 255);
+}
