@@ -11,24 +11,42 @@
     <div class="flex-container text-center border border-secondary rounded-lg bg-dark text-white p-5 mb-5">
       <div class="row">
         <div class="col-sm-12">
-          <form action="#" id="form">
-            <h2>DOM Manipulation with forms</h2> <br>
-            <label for="fn">First Name :</label>
-            <input type="text" name="fst-n" id="fn" placeholder="Type your First name">
+          <form action="#" class="form-group" id="form">
+            <h1 id="title">DOM Manipulation with forms</h1> <br>
+            <p id="description">(This form will store our data's temporarily)</p>
+
+            <div class="form-group">
+              <label for="first-name">First Name :</label>
+              <input type="text" name="fst-n" id="first-name" placeholder="Type your First name" required>
+            </div>
+            
             <br>
             <br>
-            <label for="ln">Last Name :</label>
-            <input type="text" name="lst-n" id="ln" placeholder="Type your Last Name">
+
+            <div class="form-group">
+              <label for="last-name">Last Name :</label>
+              <input type="text" name="lst-n" id="last-name" placeholder="Type your Last Name" required>
+            </div>
+            
             <br>
             <br>
-            <label for="add">Address :</label>
-            <textarea  name="add" id="add" cols="30" rows="2" placeholder="Type your Address"></textarea>
+
+            <div class="form-group">
+              <label for="address">Address :</label>
+              <textarea  name="add" id="address" cols="30" rows="2" placeholder="Type your Address"></textarea>
+            </div>
+            
             <br>
             <br>
-            <label for="pin">Pincode :</label>
-            <input type="number" name="pin" id="pin" placeholder="Pincode">
+
+            <div class="form-group">
+              <label for="pincode">Pincode :</label>
+              <input type="text" name="pin" id="pincode" placeholder="Pincode" required> 
+            </div>
+            
             <br>
             <br>
+
             <label for="gen">Gender :</label>
             <input type="radio" name="gen" id="gen" value="Male">  <span>Male</span> 
             <input type="radio" name="gen" id="gen" value="Female">  <span>Female</span>
@@ -51,7 +69,7 @@
             <input type="text" name="coun" id="coun" placeholder="Type your Country">
             <br>
             <br>
-            <input class="btn-dark border-0 btn-lg px-5" onclick="validateform()" type="submit" value="Submit">
+            <input id="submit" class="btn btn-primary border-0 btn-lg px-5" onclick="validateform()" type="submit" value="Submit">
           </form>
         </div>
       </div>
@@ -81,6 +99,7 @@
       </div>
     </div>
 
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
