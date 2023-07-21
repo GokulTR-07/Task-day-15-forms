@@ -1,6 +1,6 @@
 function validateform(){
 
-  var fn = document.getElementById("fn").value;
+  var fn = document.getElementById("first-name").value;
   var tb = document.getElementById("tbo");
   var tr = document.createElement("tr");
   var td1 = document.createElement("td");
@@ -10,7 +10,7 @@ function validateform(){
   tr.append(td1);
   
 
-  var ln = document.getElementById("ln").value;
+  var ln = document.getElementById("last-name").value;
   var tb = document.getElementById("tbo");
   var td2 = document.createElement("td");
 
@@ -18,7 +18,7 @@ function validateform(){
   tb.append(tr);
   tr.append(td2);
 
-  var add = document.getElementById("add").value;
+  var add = document.getElementById("address").value;
   var tb = document.getElementById("tbo");
   var td3 = document.createElement("td");
 
@@ -26,7 +26,7 @@ function validateform(){
   tb.append(tr);
   tr.append(td3);
 
-  var pin = document.getElementById("pin").value;
+  var pin = document.getElementById("pincode").value;
   var tb = document.getElementById("tbo");
   var td4 = document.createElement("td");
 
